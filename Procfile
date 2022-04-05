@@ -1,1 +1,1 @@
-web: gunicorn RECOMMENDATION-API:app
+web: gunicorn main:app
