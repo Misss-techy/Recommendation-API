@@ -19,18 +19,18 @@ path = 'C:/Users/sumai/Desktop/project/dataset/'
 # data = pd.read_csv(path + "instacart.csv")
 
 path = 'C:/Users/sumai/Desktop/project/dataset/'
-orders_path = path+"orders.csv"
-products_path = path+"products.csv"
+orders_path = "orders.csv"
+products_path = "products.csv"
 test_data_path ='user_products__test.csv'
-matrix_df_path = path + 'user_products__prior.csv'
-matrix_path = path+"product_user_matrix.npz"
-product_user_matrix_path= path+"product_user_matrix.npz"
+matrix_df_path = 'user_products__prior.csv'
+matrix_path = "product_user_matrix.npz"
+product_user_matrix_path= "product_user_matrix.npz"
 product_factor_50_path="product_factor_50.npy"
-user_factor_50_path= path+"user_factor_50.npy"
-product_factor_100_path= path+"product_factor_100.npy"
-user_factor_100_path= path+"user_factor_100.npy"
+user_factor_50_path= "user_factor_50.npy"
+product_factor_100_path= "product_factor_100.npy"
+user_factor_100_path= "user_factor_100.npy"
 
-df_order_products_prior = pd.read_csv(path + 'order_products__prior.csv')
+df_order_products_prior = pd.read_csv('order_products__prior.csv')
 df_order_products_train = pd.read_csv('order_products__train.csv')
 df_orders =  pd.read_csv(orders_path)
 
