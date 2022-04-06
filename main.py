@@ -214,7 +214,7 @@ print("User ID :",user_id)
 recommendations_all = svd_recm.recommend(u_dict[user_id],N=10)
 recommendations_new = svd_recm.recommend_new(u_dict[user_id],N=10)
 
-@app.route("/home")
+@app.route("/home", methods=['GET'])
 def home():
     return "Flask API get endpoint running"
 
