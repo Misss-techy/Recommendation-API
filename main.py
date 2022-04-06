@@ -16,22 +16,22 @@ import time
 from pathlib import Path
 
 path = 'C:/Users/sumai/Desktop/project/dataset/'
-data = pd.read_csv(path + "instacart.csv")
+# data = pd.read_csv(path + "instacart.csv")
 
 path = 'C:/Users/sumai/Desktop/project/dataset/'
 orders_path = path+"orders.csv"
 products_path = path+"products.csv"
-test_data_path = path + 'user_products__test.csv'
+test_data_path ='user_products__test.csv'
 matrix_df_path = path + 'user_products__prior.csv'
 matrix_path = path+"product_user_matrix.npz"
 product_user_matrix_path= path+"product_user_matrix.npz"
-product_factor_50_path= path+"product_factor_50.npy"
+product_factor_50_path="product_factor_50.npy"
 user_factor_50_path= path+"user_factor_50.npy"
 product_factor_100_path= path+"product_factor_100.npy"
 user_factor_100_path= path+"user_factor_100.npy"
 
 df_order_products_prior = pd.read_csv(path + 'order_products__prior.csv')
-df_order_products_train = pd.read_csv(path + 'order_products__train.csv')
+df_order_products_train = pd.read_csv('order_products__train.csv')
 df_orders =  pd.read_csv(orders_path)
 
 df_products = pd.read_csv(products_path)
