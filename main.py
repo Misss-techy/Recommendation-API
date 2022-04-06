@@ -214,6 +214,10 @@ print("User ID :",user_id)
 recommendations_all = svd_recm.recommend(u_dict[user_id],N=10)
 recommendations_new = svd_recm.recommend_new(u_dict[user_id],N=10)
 
+@app.route("/home")
+def home():
+    return "Flask API get endpoint running"
+
 @app.route('/api/predict', methods=['POST'])
 def post__api_predict():
     #cuttle-environment-set-config CU22-api method=POST route=/api/predict response=output
